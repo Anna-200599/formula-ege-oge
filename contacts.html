@@ -1,28 +1,298 @@
 <!doctype html>
-<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
- <link rel="icon" type="image/png" href="favicon.png">
-<title>Контакты — 100балльник</title><meta name="description" content="Центр подготовки к ЕГЭ и ОГЭ 100балльник">
-<link rel="stylesheet" href="style.css"></head><body>
-<header class="header"><div class="container nav">
-<a class="logo" href="index.html"><span class="logo-mark">Ф</span> 100балльник</a>
-<nav class="nav-links">
-<a href="index.html">Главная</a><a href="subjects.html">Предметы</a><a href="ege.html">ЕГЭ</a><a href="oge.html">ОГЭ</a><a href="teachers.html">Преподаватели</a><a href="prices.html">Цены</a><a href="results.html">Результаты</a><a href="contacts.html">Контакты</a>
-</nav>
-<a class="btn btn-primary" href="signup.html">Записаться</a><button class="menu" aria-label="Меню">☰</button>
-</div></header>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <title>Контакты — 100балльник</title>
+  <meta name="description" content="Центр подготовки к ЕГЭ и ОГЭ 100балльник">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Карта */
+    .map-section {
+      padding-top: 20px;
+    }
+
+    .map-heading {
+      margin-bottom: 28px;
+    }
+
+    .map-heading h2 {
+      margin: 10px 0 8px;
+      font-size: 32px;
+    }
+
+    .map-heading .lead {
+      margin-bottom: 0;
+    }
+
+    .map-wrapper {
+      width: 100%;
+      overflow: hidden;
+      border-radius: 20px;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      background: #f5f5f5;
+    }
+
+    .map-wrapper iframe {
+      display: block;
+      width: 100%;
+      height: 450px;
+      border: 0;
+    }
+
+    .map-info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .map-info-item {
+      padding: 20px;
+      background: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+    }
+
+    .map-info-item strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 17px;
+    }
+
+    .map-info-item p {
+      margin: 0;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 768px) {
+      .map-heading h2 {
+        font-size: 26px;
+      }
+
+      .map-wrapper iframe {
+        height: 350px;
+      }
+
+      .map-info {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container nav">
+
+    <a class="logo" href="index.html">
+      <span class="logo-mark">Ф</span> 100балльник
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html">Главная</a>
+      <a href="subjects.html">Предметы</a>
+      <a href="ege.html">ЕГЭ</a>
+      <a href="oge.html">ОГЭ</a>
+      <a href="teachers.html">Преподаватели</a>
+      <a href="prices.html">Цены</a>
+      <a href="results.html">Результаты</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+
+    <a class="btn btn-primary" href="signup.html">Записаться</a>
+
+    <button class="menu" aria-label="Меню">☰</button>
+
+  </div>
+</header>
+
+
 <main>
-<section class="page-hero"><div class="container"><span class="badge">Мы на связи</span><h1>Контакты</h1><p class="lead">Ответим на вопросы о предметах, расписании и формате занятий.</p></div></section>
-<section class="section"><div class="container grid-3">
- <div class="card"><div class="icon">📍</div><h3>Адрес</h3><p class="muted">г. Москва, ул. Дубки 4А, кабинет 1<br>Пн–Вс, 10:00–22:00</p></div>
- <div class="card"><div class="icon">☎</div><h3>Телефон</h3><p class="muted">+7 (985) 774-32-63<br>WhatsApp / Telegram</p></div>
- <div class="card"><div class="icon">✉</div><h3>Почта</h3><p class="muted">shmelev1989shmelev@yandex.ru</p></div>
-</div></section>
+
+  <!-- Заголовок страницы -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="badge">Мы на связи</span>
+
+      <h1>Контакты</h1>
+
+      <p class="lead">
+        Ответим на вопросы о предметах, расписании и формате занятий.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- Контактная информация -->
+  <section class="section">
+    <div class="container grid-3">
+
+      <div class="card">
+        <div class="icon">📍</div>
+
+        <h3>Адрес</h3>
+
+        <p class="muted">
+          г. Москва, ул. Дубки 4А, кабинет 1<br>
+          Пн–Вс, 10:00–22:00
+        </p>
+      </div>
+
+
+      <div class="card">
+        <div class="icon">☎</div>
+
+        <h3>Телефон</h3>
+
+        <p class="muted">
+          +7 (985) 774-32-63<br>
+          WhatsApp / Telegram
+        </p>
+      </div>
+
+
+      <div class="card">
+        <div class="icon">✉</div>
+
+        <h3>Почта</h3>
+
+        <p class="muted">
+          shmelev1989shmelev@yandex.ru
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Карта -->
+  <section class="section map-section">
+    <div class="container">
+
+      <div class="map-heading">
+        <span class="badge">Мы рядом</span>
+
+        <h2>Как нас найти</h2>
+
+        <p class="lead">
+          г. Москва, ул. Дубки, 4А, кабинет 1
+        </p>
+      </div>
+
+
+      <div class="map-wrapper">
+
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?ll=37.5690%2C55.8181&z=17&pt=37.5690%2C55.8181%2Cpm2rdm&text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%94%D1%83%D0%B1%D0%BA%D0%B8%2C%204%D0%90"
+          width="100%"
+          height="450"
+          frameborder="0"
+          allowfullscreen="true">
+        </iframe>
+
+      </div>
+
+
+      <div class="map-info">
+
+        <div class="map-info-item">
+          <strong>📍 Адрес</strong>
+
+          <p>
+            г. Москва,<br>
+            ул. Дубки, 4А,<br>
+            кабинет 1
+          </p>
+        </div>
+
+
+        <div class="map-info-item">
+          <strong>🕐 Время работы</strong>
+
+          <p>
+            Пн–Вс<br>
+            10:00–22:00
+          </p>
+        </div>
+
+
+        <div class="map-info-item">
+          <strong>☎ Телефон</strong>
+
+          <p>
+            +7 (985) 774-32-63
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
 </main>
-<footer class="footer"><div class="container">
-<div class="footer-grid">
-<div><div class="logo"><span class="logo-mark">Ф</span> 100балльник</div><p>Центр подготовки к ЕГЭ и ОГЭ. Помогаем школьникам учиться системно и уверенно.</p></div>
-<div><h3>Навигация</h3><p><a href="subjects.html">Предметы</a><br><a href="teachers.html">Преподаватели</a><br><a href="prices.html">Цены</a><br><a href="results.html">Результаты</a></p></div>
-<div><h3>Контакты</h3><p>+7 (985) 774-32-63<br>shmelev1989shmelev@yandex.ru<br>г. Москва, ул. Дубки 4А, кабинет 1</p></div>
-</div><div class="footer-bottom">© 2026 100балльник.</div>
-</div></footer>
-<script src="script.js"></script></body></html>
+
+
+<footer class="footer">
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div>
+        <div class="logo">
+          <span class="logo-mark">Ф</span> 100балльник
+        </div>
+
+        <p>
+          Центр подготовки к ЕГЭ и ОГЭ.
+          Помогаем школьникам учиться системно и уверенно.
+        </p>
+      </div>
+
+
+      <div>
+        <h3>Навигация</h3>
+
+        <p>
+          <a href="subjects.html">Предметы</a><br>
+          <a href="teachers.html">Преподаватели</a><br>
+          <a href="prices.html">Цены</a><br>
+          <a href="results.html">Результаты</a>
+        </p>
+      </div>
+
+
+      <div>
+        <h3>Контакты</h3>
+
+        <p>
+          +7 (985) 774-32-63<br>
+          shmelev1989shmelev@yandex.ru<br>
+          г. Москва, ул. Дубки 4А, кабинет 1
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+      © 2026 100балльник.
+    </div>
+
+  </div>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+

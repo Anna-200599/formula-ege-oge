@@ -65,7 +65,7 @@ h3{margin:0 0 8px}
 input,select,textarea{width:100%;padding:14px 15px;border:1px solid var(--border);border-radius:13px;font:inherit;background:#fff;outline:none}
 input:focus,select:focus,textarea:focus{border-color:var(--primary);box-shadow:0 0 0 4px #eeecff}
 textarea{min-height:130px;resize:vertical}
-.footer{margin-top:70px;background:#111628;color:#dce0ea;padding:45px 0}
+.footer{margin-top:10px;background:#111628;color:#dce0ea;padding:45px 0}
 .footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:35px}
 .footer a{color:#c1c6d4}.footer a:hover{color:#fff}
 .footer-bottom{margin-top:30px;padding-top:20px;border-top:1px solid #2a3042;color:#9299aa;font-size:13px}
